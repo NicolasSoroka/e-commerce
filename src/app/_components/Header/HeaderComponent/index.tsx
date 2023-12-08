@@ -9,7 +9,6 @@ import { Gutter } from '../../Gutter'
 
 import classes from './index.module.scss'
 import { HeaderNav } from '../Nav'
-import HeaderMobileNav from '../MobileNav'
 import { noHeaderFooterUrls } from '../../../constants'
 import { usePathname } from 'next/navigation'
 
@@ -25,7 +24,6 @@ const HeaderComponent = ({ header } : {header: Header}) => {
           </Link>
 
           <HeaderNav header={header}/>
-          <HeaderMobileNav header={header}/>
         </Gutter>
       </nav>
     )
